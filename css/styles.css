@@ -1,0 +1,183 @@
+:root {
+  --primari-text-color: #2E2F42;
+  --title-text-color: #434455;
+  --button-text-color: #4D5AE5;
+  --hero-text-color: #ffff;
+}
+/* Палітра кольорів для роботи */
+/* #2E2F42 */
+/* Цвет лого WEB #4D5AE5 */
+ /* Цвет лого STUDIO #2E2F42 */
+/* Цвет основного текста и шапки 2E2F42# */
+/* Вторичный цвет фона #F4F4FD */
+ /* #434455 вторичный цвет */
+ /* Цвет лого футера #4D5AE5 */
+/* #F4F4FD цвет футера */
+body {
+    background-color:--hero-text-color;
+    color: var(--primari-text-color);
+      font-family: Roboto, sans-serif;
+      letter-spacing: 0.02em;
+      font-size: 18px;
+      line-height: 1.5;
+}
+/* убираем точки, и подчёркивания с сылок */
+ul {
+  list-style: none
+} 
+.list {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  color: var(--button-text-color);
+}
+
+/* Logo */
+.logo-web, 
+.logo-studiohead,
+.logo-studio {
+ color: var(--button-text-clor);
+ font-family: Raleway, sans-serif;
+ font-size:18px;
+ line-height: 1.17;
+}
+.logo-web {
+  color: var(--button-text-color);
+}
+
+.logo-studiohead {
+  color: var(--primari-text-color);
+}
+
+.logo-studio {
+  color: var(--primari-text-color);
+}
+.logo-web {
+  color: var(--button-text-color);
+}
+.logo-studiofooter {
+  color: var(--hero-text-color);
+}
+/* Site-nav */
+.site-nav .link {
+  color: var(--pimari-text-color);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+ .site-nav .link:hover, 
+ .site-nav .link:focus {
+  color: var(--primari-text-color);
+}
+.auth-nav {
+  color: var(--primari-text-color);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+
+}
+/* contact */
+.contacts a {
+    color: var(--title-text-color);
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  text-decoration: none;
+}
+
+/* Переваги */
+/* Герой */
+.hero {
+  color: var(--hero-text-color);
+  background-color: var(--primari-text-color);
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.08;
+  text-align: center;
+}
+
+.button-hero {
+    background-color: var(--button-text-color);
+    color: var(--hero-text-color);
+
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+
+    cursor: pointer;
+}
+
+.section-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: left;
+}
+/* Що ми робимо */
+/* Наша команда */
+
+/* футер */
+.footer {
+  background-color: var(--primari-text-color);
+  padding: 100px 0;
+}
+
+.footer .logo-web {
+  color: var(--button-text-color);
+      font-family: Raleway, sans-serif;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 1.17;
+}
+.footer-text {
+  color: var(--hero-text-color);
+  max-width: 264px;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-top: 16px;
+}
+ 
+
+/* Portfolio */
+/* font-family:inherit; */
+.button:hover,
+.button:focus {
+  background-color: var(--button-text-color);
+  color: var(--hero-text-color);
+  border-color: var(--button-text-color);
+}
+/* Оформлення кнопок */
+ .button {
+   padding: 12px 24px;
+   border: 1px solid #e7e9fc;
+   border-radius: 6%;
+
+   background-color: #f4f4fd;
+   color: var(--button-text-color);
+
+   cursor: pointer;
+ }
+
+ .hidden {
+   position: absolute;
+   white-space: nowrap;
+   width: 1px;
+   height: 1px;
+   overflow: hidden;
+   border: 0;
+   padding: 0;
+   clip: rect(0 0 0 0);
+   clip-path: inset(50%);
+   margin: -1px;
+ }
+
+
+
+
+ 
