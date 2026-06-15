@@ -2,36 +2,48 @@
   --primari-text-color: #2E2F42;
   --title-text-color: #434455;
   --button-text-color: #4D5AE5;
-  --hero-text-color: #ffff;
+  --hero-text-color: #fff;
   --border-button-color: #e7e9fc;
   --border-background-color: #f4f4fd;
 }
+
 /* Палітра кольорів для роботи */
 /* #2E2F42 */
 /* Цвет лого WEB #4D5AE5 */
- /* Цвет лого STUDIO #2E2F42 */
+/* Цвет лого STUDIO #2E2F42 */
 /* Цвет основного текста и шапки 2E2F42# */
 /* Вторичный цвет фона #F4F4FD */
- /* #434455 вторичный цвет */
- /* Цвет лого футера #4D5AE5 */
+/* #434455 вторичный цвет */
+/* Цвет лого футера #4D5AE5 */
 /* #F4F4FD цвет футера */
 body {
-    background-color:var(--hero-text-color);
-    color: var(--primari-text-color);
-      font-family: Roboto, sans-serif;
-      letter-spacing: 0.02em;
-      font-size: 18px;
-      line-height: 1.5;
-      margin: 0;
+  background-color: var(--hero-text-color);
+  color: var(--primari-text-color);
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.02em;
+  font-size: 18px;
+  line-height: 1.5;
+  margin: 0;
 }
+
 /* убираем точки, и подчёркивания с сылок */
-ul,h1,h2,h3,p {
+ul,
+h1,
+h2,
+h3,
+p {
   margin: 0;
   padding: 0;
-} 
+}
+
+.section {
+  padding: 120px 0;
+}
+
 .list {
   list-style: none;
 }
+
 a {
   text-decoration: none;
 }
@@ -42,13 +54,12 @@ a:focus {
 }
 
 /* Logo */
-.logo-web, 
+.logo-web,
 .logo-studiohead,
 .logo-studio {
- color: var(--button-text-clor);
- font-family: Raleway, sans-serif;
- font-size:18px;
- line-height: 1.17;
+  font-family: Raleway, sans-serif;
+  font-size: 18px;
+  line-height: 1.17;
 }
 
 .logo-web {
@@ -62,37 +73,48 @@ a:focus {
 .logo-studio {
   color: var(--primari-text-color);
 }
-.logo-web {
-  color: var(--button-text-color);
-}
+
 .logo-studiofooter {
   color: var(--hero-text-color);
 }
-/* Site-nav */
+
+/* Site-nav auth-nav */
 .site-nav .link {
-  color: var(--pimari-text-color);
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.5;
-}
- .site-nav .link:hover, 
- .site-nav .link:focus {
-  color: var(--button-text-color);
-}
-.auth-nav {
   color: var(--primari-text-color);
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
-}  
-.auth-nav :hover,
-.auth-nav :focus {
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
   color: var(--button-text-color);
 }
 
+.auth-nav {
+  display: flex;
+  gap: 40px;
+
+  color: var(--primari-text-color);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.auth-nav a:hover,
+.auth-nav a:focus {
+  color: var(--button-text-color);
+}
+
+.site-nav {
+  display: flex;
+  gap: 40px;
+
+  margin-left: 76px;
+}
 /* contact */
 .contacts a {
-    color: var(--title-text-color);
+  color: var(--title-text-color);
   font-family: Roboto, sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -100,33 +122,63 @@ a:focus {
   text-decoration: none;
 }
 
-/* Переваги */
+/* Header */
+.header {
+  border-bottom: 1px solid var(--border-button-color);
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container {
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
 /* Герой */
+.hero {
+  background-color: var(--primari-text-color);
+  text-align: center;
+  padding: 188px 0;
+}
+
+/* Menu */
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+
+
 .hero-title {
   color: var(--hero-text-color);
-  background-color: var(--primari-text-color);
   font-weight: 700;
   font-size: 56px;
-  line-height: 1.08;
-  text-align: center;
-  margin: 0 0 24px;
+  line-height: 1.07;
+
+  max-width: 496px;
+  margin: 0 auto 48px;
 }
 
 .button-hero {
-    background-color: var(--button-text-color);
+  background-color: var(--button-text-color);
   color: var(--hero-text-color);
   padding: 16px 32px;
 
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.5;
-    letter-spacing: 0.04em;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
 
-    border: none;
-    border-radius: 4%;
-    cursor: pointer;
+  border: none;
+  border-radius: 4%;
+  cursor: pointer;
 
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .section-title {
@@ -135,8 +187,89 @@ a:focus {
   line-height: 1.2;
   text-align: left;
 }
-/* Що ми робимо */
+
+/* Future list */
+.feature-list {
+  display: flex;
+  gap: 24px;
+}
+
+/* what are we doing */
+.section {
+  padding: 120px 0;
+}
+
+.section-title-work {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+  text-align: center;
+
+  margin-bottom: 72px;
+}
+
+.work-list {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+}
+
+.work-list img {
+  display: block;
+}
+
 /* Наша команда */
+.team {
+  background-color: var(--border-background-color);
+  padding: 120px 0;
+}
+
+.team-list {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+  justify-content: center;
+}
+
+.team-title {
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  margin-bottom: 72px;
+}
+
+.team-list {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+}
+
+.team-item {
+  background-color: var(--hero-text-color);
+  border-radius: 0 0 4px 4px;
+}
+
+.team-content {
+  padding: 32px 16px;
+}
+
+.team-name {
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.team-position {
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  color: var(--title-text-color);
+}
+
+img {
+  display: block;
+}
 
 /* футер */
 .footer {
@@ -146,11 +279,12 @@ a:focus {
 
 .footer .logo-web {
   color: var(--button-text-color);
-      font-family: Raleway, sans-serif;
-        font-size: 18px;
-        font-weight: 700;
-        line-height: 1.17;
+  font-family: Raleway, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.17;
 }
+
 .footer-text {
   color: var(--hero-text-color);
   max-width: 264px;
@@ -158,7 +292,7 @@ a:focus {
   line-height: 1.5;
   margin-top: 16px;
 }
- 
+
 
 /* Portfolio */
 /* font-family:inherit; */
@@ -168,32 +302,28 @@ a:focus {
   color: var(--hero-text-color);
   border-color: var(--button-text-color);
 }
+
 /* Оформлення кнопок */
- .button {
-   padding: 12px 24px;
-   border: 1px solid var(--border-button-color);
-   border-radius: 6%;
+.button {
+  padding: 12px 24px;
+  border: 1px solid var(--border-button-color);
+  border-radius: 6%;
 
-   background-color: var(--border-background-color);
-   color: var(--button-text-color);
+  background-color: var(--border-background-color);
+  color: var(--button-text-color);
 
-   cursor: pointer;
- }
+  cursor: pointer;
+}
 
- .hidden {
-   position: absolute;
-   white-space: nowrap;
-   width: 1px;
-   height: 1px;
-   overflow: hidden;
-   border: 0;
-   padding: 0;
-   clip: rect(0 0 0 0);
-   clip-path: inset(50%);
-   margin: -1px;
- }
-
-
-
-
- 
+.hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
