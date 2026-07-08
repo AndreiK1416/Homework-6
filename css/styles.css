@@ -245,13 +245,19 @@ a:focus {
   background-color: var(--button-text-color);
   color: var(--hero-text-color);
   cursor: pointer;
+
+  transition:
+    background-color 250ms var(--timing-function),
+    border 250ms var(--timing-function)
 }
 
 .button-hero:hover,
 .button-hero:focus {
   background-color: var(--button-hover-color);
   border-color: var(--button-text-color);
+
 }
+
 
 /* subscribe-button,subscribe-text */
 .subscribe-text {
@@ -705,6 +711,10 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  transition:
+      background-color 250ms var(--timing-function),
+      border 250ms var(--timing-function)
 }
 
 .team-social-link:hover,
@@ -766,7 +776,8 @@ img {
   justify-content: center;
   align-items: center;
 
-  transition: background-color 250ms;
+  transition: background-color 250ms var(--timing-function),
+    border 250ms var(--timing-function);
 }
 
 .footer-social-link:hover,
