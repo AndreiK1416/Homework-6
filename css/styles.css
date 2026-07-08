@@ -135,10 +135,15 @@ a:focus {
   color: var(--button-hover-color);
 }
 
+.site-nav .link {
+  transition: color 250ms var(--timing-function);
+}
 
 .site-nav .link:hover,
 .site-nav .link:focus {
   color: var(--button-text-color);
+
+
 
 }
 
@@ -163,6 +168,9 @@ a:focus {
   color: var(--button-text-color);
 }
 
+.auth-nav a {
+  transition: color 250ms var(--timing-function);
+}
 
 
 
@@ -274,6 +282,8 @@ a:focus {
 .subscribe-button:focus {
   background-color: var(--button-hover-color);
   border-color: var(--button-text-color);
+
+
 }
 
 /* form-footer */
@@ -857,6 +867,7 @@ img {
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
+
 }
 
 .modal-field {
@@ -902,6 +913,8 @@ img {
   fill: var(--button-text-color);
 }
 
+
+
 .modal-field-comment {
   margin-bottom: 16px;
 }
@@ -924,6 +937,14 @@ img {
   border-color: var(--button-text-color);
 }
 
+.modal-input {
+  transition: border-color 250ms var(--timing-function);
+}
+
+.modal-textarea {
+  transition: border-color 250ms var(--timing-function);
+}
+
 .modal-checkbox {
   display: flex;
   align-items: center;
@@ -934,8 +955,48 @@ img {
   margin-bottom: 24px;
 }
 
-.checkbox-text {
+/* custom-checkbox */
+
+.modal-checkbox-input {
+  position: absolute;
+  opacity: 0;
+}
+
+/* custom checkbox */
+.modal-checkbox-custom {
+  width: 16px;
+  height: 16px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   margin-right: 8px;
+
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 2px;
+
+  background-color: transparent;
+
+  transition: border-color 250ms var(--timing-function);
+  border-color: var(--timing-function);
+}
+
+.checkbox-icon {
+  fill: var(--checkbox-icon-color);
+  opacity: 0;
+  transition: opacity 250ms var(--timing-function);
+}
+
+
+.modal-checkbox-input:checked+.modal-checkbox-custom {
+  border-color: var(--button-text-color);
+  background-color: var(--button-text-color);
+  color: var(--hero-text-color);
+}
+
+.modal-checkbox-input:checked+.modal-checkbox-custom .checkbox-icon {
+  opacity: 1;
 }
 
 .privacy-link {
